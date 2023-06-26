@@ -4,6 +4,7 @@ import { EmployeeList } from "../employees/EmployeeList"
 import { EmployeeDetails } from "../employees/EmployeeDetails"
 import { CustomerDetails } from "../customers/CustomerDetails"
 import { CustomerList } from "../customers/CustomerList"
+import { Profile } from "../profile/Profile"
 
 export const EmployeeViews = () => {
 	return (
@@ -17,6 +18,7 @@ export const EmployeeViews = () => {
                 </>
             }>
 
+                <Route path="profile" element={ <Profile /> } />
                 <Route path="tickets" element={ <TicketContainer /> } />
                 <Route path="employees" element={ <EmployeeList /> } />
                 <Route path="customers" element={ <CustomerList /> } />
